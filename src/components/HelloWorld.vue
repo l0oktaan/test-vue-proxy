@@ -16,6 +16,7 @@ export default {
   methods: {
     async fetchData(){
       let path = await '/api/activity'
+      //https://www.boredapi.com/api/activity
       const res = await axios.get(path)
       this.data = await res.data;
       await console.log(this.data);
